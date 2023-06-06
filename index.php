@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-    echo "ciao";
-    ?>
+    <form action="testo.php">
+		<input type="text" name="testo" placeholder="Inserisci il testo">
+		<input type="text" name="parola" placeholder="Inserisci la parola da censurare">
+		<button>Censura</button>
+		<button type="reset">Resetta</button>
+	</form>
 </body>
 </html>
