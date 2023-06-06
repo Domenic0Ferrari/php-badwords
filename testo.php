@@ -3,6 +3,7 @@
     $lung_testo = strlen($testo);
     $censura = $_GET['parola'];
     $testo_censurato = str_replace($censura, '***', $testo);
+    $lung_testo_cens = strlen($testo_censurato);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,5 +19,6 @@
     </p>
     <p>Il tuo testo è lungo: <?= $lung_testo; ?></p>
     <p>Il tuo testo censurato: <?= $testo_censurato ?></p>
+    <p>Il tuo testo censurato è lungo: <?= $lung_testo_cens; ?></p>
 </body>
 </html>
