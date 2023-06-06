@@ -1,6 +1,7 @@
 <?php
 	$testo = $_GET['testo'];
-?>ad
+    $lung_testo = strlen($testo);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>
+    <p>
         <?= $testo; ?>
-    </h2>
+    </p>
+    <p>Il tuo testo è lungo: <?= $lung_testo; ?></p>
 </body>
 </html>
